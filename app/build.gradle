@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace 'com.mozhimen.scank.tflite.test'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.mozhimen.scank.tflite.test"
@@ -32,14 +32,14 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
-        dataBinding = true
+        viewBinding = true
     }
 }
 
 dependencies {
 
     implementation project(':SwiftKit:basick')
-    implementation project(':edge_detection')
+    implementation project(':tflite_normalize')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

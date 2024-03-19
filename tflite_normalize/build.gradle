@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.mozhimen.scank.tflite.edge'
+    namespace 'com.mozhimen.scank.tflite.normalize'
     compileSdk 33
 
     defaultConfig {
@@ -30,7 +30,6 @@ android {
 }
 
 dependencies {
-
     implementation project(':SwiftKit:basick')
     implementation project(':TFLiteLoader:tfloader')
 

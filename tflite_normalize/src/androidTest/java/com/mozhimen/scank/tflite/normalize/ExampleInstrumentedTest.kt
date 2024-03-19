@@ -1,4 +1,4 @@
-package com.mozhimen.scank.tflite.edge
+package com.mozhimen.scank.tflite.normalize
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

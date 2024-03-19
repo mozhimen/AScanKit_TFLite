@@ -1,4 +1,4 @@
-package com.mozhimen.scank.tflite.edge
+package com.mozhimen.scank.tflite.normalize
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.mozhimen.scank.tflite.edge;
+package com.mozhimen.scank.tflite.normalize;
 
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import com.mozhimen.basick.lintk.optins.OApiInit_ByLazy;
 
 import org.tensorflow.lite.Interpreter;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -17,7 +16,7 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
 @OApiInit_ByLazy
-public class TFLiteEdgeDetection {
+public class TFLiteNormalizeDetector {
 
     private static final String MODEL_FILE = "hed_lite_model_quantize.tflite";
     private static final int desiredSize = 256;
@@ -34,11 +33,11 @@ public class TFLiteEdgeDetection {
 
     //////////////////////////////////////////////////////////////////////////
 
-    public TFLiteEdgeDetection(Context context) throws IOException {
+    public TFLiteNormalizeDetector(Context context) throws IOException {
         this(context, MODEL_FILE);
     }
 
-    public TFLiteEdgeDetection(Context context, String modelFile) throws IOException {
+    public TFLiteNormalizeDetector(Context context, String modelFile) throws IOException {
         if (TextUtils.isEmpty(modelFile)) {
             modelFile = MODEL_FILE;
         }
@@ -54,7 +53,7 @@ public class TFLiteEdgeDetection {
 
     //////////////////////////////////////////////////////////////////////////
 
-    public synchronized Bitmap edgeDetect(Bitmap bitmap) {
+    public synchronized Bitmap normalize(Bitmap bitmap) {
         if (bitmap == null) {
             return null;
         }
