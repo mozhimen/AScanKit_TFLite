@@ -2,13 +2,13 @@ package com.mozhimen.scank.tflite.test
 
 import android.content.Intent
 import android.os.Bundle
-import com.mozhimen.basick.elemk.android.app.cons.CActivity
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.viewbinding.BaseActivityVB
-import com.mozhimen.basick.lintk.optins.OApiInit_ByLazy
-import com.mozhimen.basick.utilk.android.content.UtilKIntentWrapper
-import com.mozhimen.basick.utilk.android.net.uri2bitmap
+import com.mozhimen.kotlin.elemk.android.app.cons.CActivity
+import com.mozhimen.kotlin.lintk.optins.OApiInit_ByLazy
+import com.mozhimen.kotlin.utilk.android.content.UtilKIntentWrapper
+import com.mozhimen.kotlin.utilk.android.net.uri2bitmap
 import com.mozhimen.scank.tflite.normalize.TFLiteNormalizeDetector
 import com.mozhimen.scank.tflite.test.databinding.ActivityEdgeDetectionBinding
+import com.mozhimen.mvvmk.bases.activity.viewbinding.BaseActivityVB
 
 class EdgeDetectionActivity : BaseActivityVB<ActivityEdgeDetectionBinding>() {
     @OptIn(OApiInit_ByLazy::class)

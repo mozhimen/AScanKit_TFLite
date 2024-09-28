@@ -24,11 +24,17 @@ include ':tflite_normalize'
 //SwiftKit
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
+include ':SwiftKit:mvvmk'
 include ':SwiftKit:basick'
-include ':SwiftKit:uicorek'
-//TFLiteLoader
-include ':TFLiteLoader'
-project(':TFLiteLoader').projectDir = new File("D:\\WorkSpace\\GitHub\\TFLiteLoader")
-include ':TFLiteLoader:tfloader'
+include ':SwiftKit:xmlk'
+//ATFLiteLoader
+include ':ATFLiteLoader'
+project(':ATFLiteLoader').projectDir = new File("D:\\WorkSpace\\GitHub\\ATFLiteLoader")
+include ':ATFLiteLoader:tfloader'
+//KUtilKit
+include ':KUtilKit'
+project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
+include ':KUtilKit:utilk_android'
+include ':KUtilKit:utilk_kotlin'
 
 

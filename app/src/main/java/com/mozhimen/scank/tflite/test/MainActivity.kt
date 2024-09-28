@@ -1,11 +1,9 @@
 package com.mozhimen.scank.tflite.test
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.view.View
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.viewbinding.BaseActivityVB
-import com.mozhimen.basick.utilk.android.content.startContext
+import com.mozhimen.kotlin.utilk.android.content.startContext
 import com.mozhimen.scank.tflite.test.databinding.ActivityMainBinding
+import com.mozhimen.mvvmk.bases.activity.viewbinding.BaseActivityVB
 
 class MainActivity : BaseActivityVB<ActivityMainBinding>() {
     fun goEdgeDetection(view: View){

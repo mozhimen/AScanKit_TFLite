@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace 'com.mozhimen.scank.tflite.normalize'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
-        minSdk 19
+        minSdk 21
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -30,8 +30,8 @@ android {
 }
 
 dependencies {
-    implementation project(':SwiftKit:basick')
-    implementation project(':TFLiteLoader:tfloader')
+    implementation project(':KUtilKit:utilk_android')
+    implementation project(':ATFLiteLoader:tfloader')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

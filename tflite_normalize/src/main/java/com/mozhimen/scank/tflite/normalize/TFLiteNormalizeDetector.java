@@ -5,7 +5,7 @@ import android.content.res.AssetFileDescriptor;
 import android.graphics.Bitmap;
 import android.text.TextUtils;
 
-import com.mozhimen.basick.lintk.optins.OApiInit_ByLazy;
+import com.mozhimen.kotlin.lintk.optins.OApiInit_ByLazy;
 
 import org.tensorflow.lite.Interpreter;
 import java.io.FileInputStream;
