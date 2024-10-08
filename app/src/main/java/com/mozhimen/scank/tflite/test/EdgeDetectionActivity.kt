@@ -8,7 +8,7 @@ import com.mozhimen.kotlin.utilk.android.content.UtilKIntentWrapper
 import com.mozhimen.kotlin.utilk.android.net.uri2bitmap
 import com.mozhimen.scank.tflite.normalize.TFLiteNormalizeDetector
 import com.mozhimen.scank.tflite.test.databinding.ActivityEdgeDetectionBinding
-import com.mozhimen.mvvmk.bases.activity.viewbinding.BaseActivityVB
+import com.mozhimen.bindk.bases.viewbinding.activity.BaseActivityVB
 
 class EdgeDetectionActivity : BaseActivityVB<ActivityEdgeDetectionBinding>() {
     @OptIn(OApiInit_ByLazy::class)
